@@ -170,7 +170,7 @@
                                     <constraint firstAttribute="width" constant="343" id="AX6-co-vm9"/>
                                     <constraint firstAttribute="height" constant="290" id="wWm-Xo-YiQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
