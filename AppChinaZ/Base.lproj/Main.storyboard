@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SVb-ni-P2h">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,219 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppChinaZ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdV-1D-n3t">
+                                <rect key="frame" x="137.5" y="524" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.86396080259999997" green="0.021638926119999999" blue="0.026361446829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="yyE-n9-0DL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                <state key="normal" title="Entrar">
+                                    <color key="titleColor" red="0.96462160350000004" green="0.96475988629999998" blue="0.96459120509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eJM-mE-twF" kind="show" id="XuM-0z-cS4"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="horoscopochino" translatesAutoresizingMaskIntoConstraints="NO" id="UDP-c3-X5C">
+                                <rect key="frame" x="0.0" y="-43" width="375" height="517"/>
+                                <color key="tintColor" red="0.96462160350000004" green="0.96475988629999998" blue="0.96459120509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Upw-Vu-ccE"/>
+                                    <constraint firstAttribute="height" constant="517" id="tT4-2M-IG4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UDP-c3-X5C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7TM-s1-Nja"/>
+                            <constraint firstItem="UDP-c3-X5C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CHF-IT-6R8"/>
+                            <constraint firstItem="UDP-c3-X5C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-61" id="KSQ-OW-E9i"/>
+                            <constraint firstItem="JdV-1D-n3t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LWO-eA-ysR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UDP-c3-X5C" secondAttribute="bottom" constant="167" id="fco-qb-4ty"/>
+                            <constraint firstItem="UDP-c3-X5C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-61" id="hJg-gU-ihP"/>
+                            <constraint firstItem="UDP-c3-X5C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hvq-7E-3oj"/>
+                            <constraint firstItem="UDP-c3-X5C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jdi-bn-XPX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JdV-1D-n3t" secondAttribute="bottom" constant="103" id="rzd-dU-hD7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UDP-c3-X5C" secondAttribute="bottom" constant="167" id="yWj-ad-bBW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="c6M-iT-T7f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1292" y="79.610194902548727"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D1O-Gq-7eo">
+            <objects>
+                <navigationController id="SVb-ni-P2h" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1zV-6q-Yfw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qdc-pO-Bbd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQ0-pp-zih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="80"/>
+        </scene>
+        <!--Calendario View Controller-->
+        <scene sceneID="JbW-e6-1gW">
+            <objects>
+                <viewController id="eJM-mE-twF" customClass="CalendarioViewController" customModule="AppChinaZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x6x-VN-TBr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="r3s-Z1-Ddx">
+                                <rect key="frame" x="0.0" y="150" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="YZy-D3-yyj"/>
+                                    <constraint firstAttribute="width" constant="375" id="cKp-fT-Yj4"/>
+                                </constraints>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-378648000">
+                                    <!--1989-01-01 12:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="31489200">
+                                    <!--2001-12-31 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="es_ES"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FECHA DE NACIMIENTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEM-Nr-oJG">
+                                <rect key="frame" x="79" y="69" width="217" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="217" id="Vk7-D3-Yb9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="57" id="afX-el-bsG"/>
+                                    <constraint firstAttribute="height" constant="57" id="voe-d3-RzT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" red="0.92292851209640503" green="0.28465032577514648" blue="0.23203077912330627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h4-us-WZM">
+                                <rect key="frame" x="101" y="436" width="142" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="AxS-EB-21e"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="MYa-J9-bbV"/>
+                                    <constraint firstAttribute="height" constant="30" id="mcA-da-kZC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                <state key="normal" title="CONSULTAR" image="paperplane.fill" catalog="system">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="consultarButton:" destination="eJM-mE-twF" eventType="touchUpInside" id="0MT-lP-MOR"/>
+                                    <segue destination="avl-Hu-7Sl" kind="presentation" id="6r1-qc-2jV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98744779829999996" green="0.90647500749999999" blue="0.9263607264" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ohq-XR-dKx" firstAttribute="bottom" secondItem="8h4-us-WZM" secondAttribute="bottom" constant="201" id="0zw-NI-Ske"/>
+                            <constraint firstItem="r3s-Z1-Ddx" firstAttribute="top" secondItem="iEM-Nr-oJG" secondAttribute="bottom" constant="24" id="1nK-U9-fp0"/>
+                            <constraint firstItem="iEM-Nr-oJG" firstAttribute="centerX" secondItem="r3s-Z1-Ddx" secondAttribute="centerX" id="5Cy-Rm-181"/>
+                            <constraint firstItem="8h4-us-WZM" firstAttribute="top" secondItem="r3s-Z1-Ddx" secondAttribute="bottom" constant="70" id="ARB-f7-nJa"/>
+                            <constraint firstItem="8h4-us-WZM" firstAttribute="leading" secondItem="Ohq-XR-dKx" secondAttribute="leading" constant="101" id="BbI-xj-1OQ"/>
+                            <constraint firstItem="r3s-Z1-Ddx" firstAttribute="trailing" secondItem="Ohq-XR-dKx" secondAttribute="trailing" id="EPq-hm-2SU"/>
+                            <constraint firstItem="r3s-Z1-Ddx" firstAttribute="leading" secondItem="Ohq-XR-dKx" secondAttribute="leading" id="Ifz-FM-hCE"/>
+                            <constraint firstItem="8h4-us-WZM" firstAttribute="leading" secondItem="Ohq-XR-dKx" secondAttribute="leading" constant="101" id="Kob-yO-NVY"/>
+                            <constraint firstItem="Ohq-XR-dKx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iEM-Nr-oJG" secondAttribute="trailing" id="Ofw-sZ-cFm"/>
+                            <constraint firstItem="iEM-Nr-oJG" firstAttribute="centerX" secondItem="x6x-VN-TBr" secondAttribute="centerX" id="SRP-a3-cju"/>
+                            <constraint firstItem="r3s-Z1-Ddx" firstAttribute="leading" secondItem="Ohq-XR-dKx" secondAttribute="leading" id="WQ9-1G-dke"/>
+                            <constraint firstItem="iEM-Nr-oJG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ohq-XR-dKx" secondAttribute="leading" id="aQl-3F-2gH"/>
+                            <constraint firstItem="iEM-Nr-oJG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ohq-XR-dKx" secondAttribute="leading" id="aaU-x0-Vbn"/>
+                            <constraint firstItem="iEM-Nr-oJG" firstAttribute="top" secondItem="Ohq-XR-dKx" secondAttribute="top" constant="25" id="nA2-4z-yq7"/>
+                            <constraint firstItem="r3s-Z1-Ddx" firstAttribute="top" secondItem="iEM-Nr-oJG" secondAttribute="bottom" constant="24" id="rtm-F3-zfq"/>
+                            <constraint firstItem="Ohq-XR-dKx" firstAttribute="trailing" secondItem="8h4-us-WZM" secondAttribute="trailing" constant="132" id="tCS-TT-mLg"/>
+                            <constraint firstItem="iEM-Nr-oJG" firstAttribute="top" secondItem="Ohq-XR-dKx" secondAttribute="top" constant="25" id="tpb-AB-vDM"/>
+                            <constraint firstItem="8h4-us-WZM" firstAttribute="top" secondItem="r3s-Z1-Ddx" secondAttribute="bottom" constant="70" id="uYq-GA-UwE"/>
+                            <constraint firstItem="Ohq-XR-dKx" firstAttribute="trailing" secondItem="8h4-us-WZM" secondAttribute="trailing" constant="132" id="uyr-7j-j8S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ohq-XR-dKx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NXv-sg-3BI"/>
+                    <connections>
+                        <outlet property="DatePicker" destination="r3s-Z1-Ddx" id="9VD-nn-Evc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhH-MV-IUx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292" y="787.55622188905556"/>
+        </scene>
+        <!--Horoscopo View Controller-->
+        <scene sceneID="zXL-O0-AvL">
+            <objects>
+                <viewController id="avl-Hu-7Sl" customClass="HoroscopoViewController" customModule="AppChinaZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bbi-vQ-JTp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASK-DO-Bky">
+                                <rect key="frame" x="16" y="368" width="343" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="AX6-co-vm9"/>
+                                    <constraint firstAttribute="height" constant="290" id="wWm-Xo-YiQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perro" translatesAutoresizingMaskIntoConstraints="NO" id="uzh-7f-627">
+                                <rect key="frame" x="54" y="73" width="267" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="atc-iP-D2H"/>
+                                    <constraint firstAttribute="height" constant="169" id="e0h-Sl-ySt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBz-q7-bT4">
+                                <rect key="frame" x="35" y="285" width="305" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="305" id="BeJ-bK-1Pe"/>
+                                    <constraint firstAttribute="height" constant="21" id="zUW-EV-dwo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                <color key="textColor" red="0.92292851209640503" green="0.28465032577514648" blue="0.23203077912330627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hBz-q7-bT4" firstAttribute="centerX" secondItem="bbi-vQ-JTp" secondAttribute="centerX" id="Bgx-3b-Qxt"/>
+                            <constraint firstItem="hBz-q7-bT4" firstAttribute="leading" secondItem="uzh-7f-627" secondAttribute="trailing" constant="-286" id="LPY-RF-NZM"/>
+                            <constraint firstItem="ASK-DO-Bky" firstAttribute="centerX" secondItem="bbi-vQ-JTp" secondAttribute="centerX" id="MBl-VG-iXC"/>
+                            <constraint firstItem="ASK-DO-Bky" firstAttribute="top" secondItem="hBz-q7-bT4" secondAttribute="bottom" constant="62" id="O23-K6-opj"/>
+                            <constraint firstItem="uzh-7f-627" firstAttribute="centerX" secondItem="bbi-vQ-JTp" secondAttribute="centerX" id="RNL-5b-3ah"/>
+                            <constraint firstItem="hBz-q7-bT4" firstAttribute="top" secondItem="uzh-7f-627" secondAttribute="bottom" constant="43" id="UkQ-Fc-jrW"/>
+                            <constraint firstItem="ASK-DO-Bky" firstAttribute="leading" secondItem="hBz-q7-bT4" secondAttribute="trailing" constant="-324" id="mAr-es-ndM"/>
+                            <constraint firstItem="uzh-7f-627" firstAttribute="top" secondItem="q0i-Yt-ilp" secondAttribute="top" constant="73" id="n4Y-dH-MtV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q0i-Yt-ilp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hsW-gC-13E"/>
+                    <connections>
+                        <outlet property="descripcionLabel" destination="ASK-DO-Bky" id="4Fy-ow-Kiy"/>
+                        <outlet property="horoscopoImage" destination="uzh-7f-627" id="46i-Va-gyz"/>
+                        <outlet property="titleLabel" destination="hBz-q7-bT4" id="kgd-Vm-OM6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZDC-Cl-WqW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2029.5999999999999" y="781.25937031484261"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="horoscopochino" width="500" height="500"/>
+        <image name="paperplane.fill" catalog="system" width="64" height="60"/>
+        <image name="perro" width="600" height="670"/>
+    </resources>
+    <color key="tintColor" red="0.91548341509999998" green="0.45987671610000003" blue="0.43543261290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

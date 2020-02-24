@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9345ACD02401B1EA003B37F6 /* clases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345ACCF2401B1EA003B37F6 /* clases.swift */; };
+		93954A7023FE74FA00C92C0A /* HorosocpoChino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93954A6F23FE74FA00C92C0A /* HorosocpoChino.swift */; };
+		93954A7223FE797200C92C0A /* CalendarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93954A7123FE797200C92C0A /* CalendarioViewController.swift */; };
+		93954A7423FE798800C92C0A /* HoroscopoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93954A7323FE798800C92C0A /* HoroscopoViewController.swift */; };
 		93CF5B1923FBCF5F003ACDAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF5B1823FBCF5F003ACDAE /* AppDelegate.swift */; };
 		93CF5B1B23FBCF5F003ACDAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF5B1A23FBCF5F003ACDAE /* SceneDelegate.swift */; };
 		93CF5B1D23FBCF5F003ACDAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF5B1C23FBCF5F003ACDAE /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9345ACCF2401B1EA003B37F6 /* clases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clases.swift; sourceTree = "<group>"; };
+		93954A6F23FE74FA00C92C0A /* HorosocpoChino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorosocpoChino.swift; sourceTree = "<group>"; };
+		93954A7123FE797200C92C0A /* CalendarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioViewController.swift; sourceTree = "<group>"; };
+		93954A7323FE798800C92C0A /* HoroscopoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopoViewController.swift; sourceTree = "<group>"; };
 		93CF5B1523FBCF5F003ACDAE /* AppChinaZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChinaZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CF5B1823FBCF5F003ACDAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93CF5B1A23FBCF5F003ACDAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,12 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				93CF5B1823FBCF5F003ACDAE /* AppDelegate.swift */,
+				9345ACCF2401B1EA003B37F6 /* clases.swift */,
+				93954A7323FE798800C92C0A /* HoroscopoViewController.swift */,
+				93954A7123FE797200C92C0A /* CalendarioViewController.swift */,
 				93CF5B1A23FBCF5F003ACDAE /* SceneDelegate.swift */,
 				93CF5B1C23FBCF5F003ACDAE /* ViewController.swift */,
 				93CF5B1E23FBCF5F003ACDAE /* Main.storyboard */,
 				93CF5B2123FBCF63003ACDAE /* Assets.xcassets */,
 				93CF5B2323FBCF63003ACDAE /* LaunchScreen.storyboard */,
 				93CF5B2623FBCF63003ACDAE /* Info.plist */,
+				93954A6F23FE74FA00C92C0A /* HorosocpoChino.swift */,
 			);
 			path = AppChinaZ;
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93954A7223FE797200C92C0A /* CalendarioViewController.swift in Sources */,
+				93954A7023FE74FA00C92C0A /* HorosocpoChino.swift in Sources */,
 				93CF5B1D23FBCF5F003ACDAE /* ViewController.swift in Sources */,
+				93954A7423FE798800C92C0A /* HoroscopoViewController.swift in Sources */,
 				93CF5B1923FBCF5F003ACDAE /* AppDelegate.swift in Sources */,
 				93CF5B1B23FBCF5F003ACDAE /* SceneDelegate.swift in Sources */,
+				9345ACD02401B1EA003B37F6 /* clases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
