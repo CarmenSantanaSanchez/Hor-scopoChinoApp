@@ -21,7 +21,7 @@ class HoroscopoViewController: UIViewController {
     func updateUI(horoscopo: Horoscopo) {
         
         titleLabel.text =
-            horoscopo.signo.description
+            horoscopo.signo.description.uppercased()
         horoscopoImage.image = UIImage(named: horoscopo.signo.description)
         descripcionLabel.text = horoscopo.descripcion
         
